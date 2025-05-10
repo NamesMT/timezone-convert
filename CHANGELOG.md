@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.4
+
+[compare changes](https://github.com/namesmt/timezone-convert/compare/v1.2.3...v1.2.4)
+
+### 📖 Documentation
+
+- **README:** Add `jq` example ([0044dad](https://github.com/namesmt/timezone-convert/commit/0044dad))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.2.3
 
 [compare changes](https://github.com/namesmt/timezone-convert/compare/vv0.1.0...v1.2.3)

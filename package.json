@@ -1,7 +1,7 @@
 {
   "name": "timezone-convert",
   "type": "module",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "packageManager": "pnpm@10.10.0",
   "description": "Convert between timezone formats",
   "author": "NamesMT <dangquoctrung123@gmail.com>",
