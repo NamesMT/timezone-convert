@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.5
+
+[compare changes](https://github.com/namesmt/timezone-convert/compare/v1.2.4...v1.2.5)
+
+### 📖 Documentation
+
+- **README:** Reword ([63f1607](https://github.com/namesmt/timezone-convert/commit/63f1607))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.2.4
 
 [compare changes](https://github.com/namesmt/timezone-convert/compare/v1.2.3...v1.2.4)
