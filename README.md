@@ -57,6 +57,9 @@ The project will only supports the `ETC` IANA ids that is also used by Windows, 
 npx timezone-convert "Europe/Athens"
 # Outputs a JSON string of the parsed timezone
 # { iana, windowsId, windowsDisplay }
+
+# Example use with `jq`
+npx -y timezone-convert Asia/Saigon | jq '.windowsDisplay'
 ```
 
 ### Programatic
