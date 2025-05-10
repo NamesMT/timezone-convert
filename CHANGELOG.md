@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.3.0
+
+[compare changes](https://github.com/namesmt/timezone-convert/compare/v1.2.5...v1.3.0)
+
+### 🚀 Enhancements
+
+- Add `typedoc` action ([a2b6e6c](https://github.com/namesmt/timezone-convert/commit/a2b6e6c))
+
+### 🏡 Chore
+
+- Add `keywords` ([f6fe920](https://github.com/namesmt/timezone-convert/commit/f6fe920))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.2.5
 
 [compare changes](https://github.com/namesmt/timezone-convert/compare/v1.2.4...v1.2.5)
