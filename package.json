@@ -13,7 +13,15 @@
     "url": "git+https://github.com/namesmt/timezone-convert.git"
   },
   "bugs": "https://github.com/namesmt/timezone-convert/issues",
-  "keywords": [],
+  "keywords": [
+    "cli",
+    "convert",
+    "iana",
+    "timezone",
+    "tzid",
+    "windows-timezone",
+    "windows"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
