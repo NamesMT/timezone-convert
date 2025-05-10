@@ -35,7 +35,7 @@
 
 #### Imperfect accuracy
 
-The primary goal of the project is to focus on converting timezone formats into a roughly accurate IANA for use with other libraries (e.g Windows display name from calendar => TZID / IANA for datetime manipulation), and AS SIMPLE AS POSSIBLE, things like extensive array mapping (Windows id => Multiple IANA ids) won't be available.
+The primary goal of the project is to focus on converting from one timezone format into a roughly accurate representation in other formats for possible of use with other libraries (e.g Windows display name from calendar => TZID / IANA for datetime manipulation), and AS SIMPLE AS POSSIBLE, things like extensive array mapping (Windows id => Multiple IANA ids) won't be available.
 
 #### Partial 'etcetera' and 'backward' zones for IANA
 
