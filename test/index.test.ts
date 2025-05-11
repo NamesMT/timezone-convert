@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { parseTzAuto, parseTzFromIana, parseTzFromWindowsDisplay, parseTzFromWindowsId } from '../src/index'
+import { ianaMap, parseTzAuto, parseTzFromIana, parseTzFromWindowsDisplay, parseTzFromWindowsId } from '../src/index'
 
 describe('parseTzFromIana', () => {
   it('should parse sample iana time zone ids', () => {
@@ -65,5 +65,11 @@ describe('parseTzAuto', () => {
   it('should return undefined for entries', () => {
     expect(parseTzAuto('Invalid/Timezone'))
       .toBeUndefined()
+  })
+})
+
+describe('ianaMap', () => {
+  it('should be accessible', () => {
+    expect(ianaMap['Asia/Saigon']).toMatchObject({ iana: 'Asia/Saigon' })
   })
 })

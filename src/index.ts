@@ -1,14 +1,29 @@
+import type { KeyedBy } from '@namesmt/utils'
 import type { TimezonesElement } from './allTimezones'
-import { keyBy } from '@namesmt/utils'
 import { allTimezones } from './allTimezones'
 
 export interface TimezonesElementMap {
   [key: string]: TimezonesElement
 }
 
-export const ianaMap = keyBy(allTimezones, 'iana') satisfies TimezonesElementMap
-export const windowsIdMap = keyBy(allTimezones, 'windowsId') satisfies TimezonesElementMap
-export const windowsDisplayMap = keyBy(allTimezones, 'windowsDisplay') satisfies TimezonesElementMap
+export const {
+  ianaMap,
+  windowsIdMap,
+  windowsDisplayMap,
+} = allTimezones.reduce((p, c) => {
+  p.ianaMap[c.iana] = c
+  p.windowsIdMap[c.windowsId] = c
+  p.windowsDisplayMap[c.windowsDisplay] = c
+  return p
+}, {
+  ianaMap: {},
+  windowsIdMap: {},
+  windowsDisplayMap: {},
+} as Record<'ianaMap' | 'windowsIdMap' | 'windowsDisplayMap', TimezonesElementMap>) as {
+  ianaMap: KeyedBy<typeof allTimezones, 'iana'>
+  windowsIdMap: KeyedBy<typeof allTimezones, 'windowsId'>
+  windowsDisplayMap: KeyedBy<typeof allTimezones, 'windowsDisplay'>
+}
 
 export function parseTzFromIana(iana: keyof typeof ianaMap | string): TimezonesElement | undefined {
   // @ts-expect-error index signature mismatch
