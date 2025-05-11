@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.3.1
+
+[compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.0...v1.3.1)
+
+### 🔥 Performance
+
+- Initialize all keyed maps in one loop ([de72aff](https://github.com/namesmt/timezone-convert/commit/de72aff))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.3.0
 
 [compare changes](https://github.com/namesmt/timezone-convert/compare/v1.2.5...v1.3.0)
