@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.3.2
+
+[compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.1...v1.3.2)
+
+### 🏡 Chore
+
+- Add `main` entrypoint for bundlephobia ([2db06b6](https://github.com/namesmt/timezone-convert/commit/2db06b6))
+- Update deps ([6abddbb](https://github.com/namesmt/timezone-convert/commit/6abddbb))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.3.1
 
 [compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.0...v1.3.1)
