@@ -1,5 +1,5 @@
+import { allTimezones } from '#src/allTimezones.js'
 import { describe, expect, it } from 'vitest'
-import { allTimezones } from '../src/allTimezones'
 import { validIanaIds } from './validIanaIds'
 
 describe('allTimezones', () => {

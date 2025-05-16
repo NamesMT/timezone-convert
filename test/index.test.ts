@@ -1,5 +1,5 @@
+import { ianaMap, parseTzAuto, parseTzFromIana, parseTzFromWindowsDisplay, parseTzFromWindowsId } from '#src/index.js'
 import { describe, expect, it } from 'vitest'
-import { ianaMap, parseTzAuto, parseTzFromIana, parseTzFromWindowsDisplay, parseTzFromWindowsId } from '../src/index'
 
 describe('parseTzFromIana', () => {
   it('should parse sample iana time zone ids', () => {

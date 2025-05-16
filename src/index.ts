@@ -1,6 +1,6 @@
+import type { TimezonesElement } from '#src/allTimezones.js'
 import type { KeyedBy } from '@namesmt/utils'
-import type { TimezonesElement } from './allTimezones'
-import { allTimezones } from './allTimezones'
+import { allTimezones } from '#src/allTimezones.js'
 
 export interface TimezonesElementMap {
   [key: string]: TimezonesElement
