@@ -1,8 +1,4 @@
-export interface TimezonesElement {
-  iana: string
-  windowsId: string
-  windowsDisplay: string
-}
+import type { TimezonesElement } from '#src/types.js'
 
 export const allTimezones = [
   {

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
+import { parseTzAuto, parseTzFromIana, parseTzFromWindowsDisplay, parseTzFromWindowsId } from '#src/parse.js'
 import { defineCommand, runMain } from 'citty'
-import { parseTzAuto, parseTzFromIana, parseTzFromWindowsDisplay, parseTzFromWindowsId } from './index'
 
 const main = defineCommand({
   meta: {
