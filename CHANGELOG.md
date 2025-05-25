@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.3.4
+
+[compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.2...v1.3.4)
+
+### 💅 Refactors
+
+- Fs structuring ([bdafea3](https://github.com/namesmt/timezone-convert/commit/bdafea3))
+
+### 🏡 Chore
+
+- Use `imports` mapping ([85d9d5a](https://github.com/namesmt/timezone-convert/commit/85d9d5a))
+- Update deps ([f6b4f1b](https://github.com/namesmt/timezone-convert/commit/f6b4f1b))
+- Housekeep, switch to `obuild` ([0c199cf](https://github.com/namesmt/timezone-convert/commit/0c199cf))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.3.2
 
 [compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.1...v1.3.2)
