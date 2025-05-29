@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.3.5
+
+[compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.4...v1.3.5)
+
+### 🏡 Chore
+
+- Update deps, correct `sideEffects` ([cbbee08](https://github.com/namesmt/timezone-convert/commit/cbbee08))
+- Disable sourcemap ([2478f6c](https://github.com/namesmt/timezone-convert/commit/2478f6c))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.3.4
 
 [compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.2...v1.3.4)
