@@ -1,6 +1,8 @@
-onlyBuiltDependencies:
-  - esbuild
-  - simple-git-hooks
-  - unrs-resolver
-
 ignoreWorkspaceRootCheck: true
+overrides:
+  is-core-module: npm:@nolyfill/is-core-module@^1.0.39
+allowBuilds:
+  esbuild: true
+  simple-git-hooks: true
+  unrs-resolver: true
+minimumReleaseAge: 0
