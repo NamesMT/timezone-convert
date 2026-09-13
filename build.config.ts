@@ -12,4 +12,4 @@ export default defineBuildConfig({
       dts: false,
     },
   ],
-})
+}) as ReturnType<typeof defineBuildConfig>
