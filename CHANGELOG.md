@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.3.7
+
+[compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.6...v1.3.7)
+
+### 🩹 Fixes
+
+- Drop deprecated baseUrl and annotate obuild config type (TS6 typedoc) ([943afb4](https://github.com/namesmt/timezone-convert/commit/943afb4))
+
+### 🏡 Chore
+
+- Migrate to pnpm 12 ([b930d4b](https://github.com/namesmt/timezone-convert/commit/b930d4b))
+
+### 🤖 CI
+
+- Use pnpm/action-setup for pnpm 12 ([e7f6b5f](https://github.com/namesmt/timezone-convert/commit/e7f6b5f))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.3.6
 
 [compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.5...v1.3.6)
