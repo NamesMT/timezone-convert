@@ -33,7 +33,7 @@
   },
   "main": "./dist/index.mjs",
   "bin": {
-    "timezone-convert": "./dist/cli-entry.mjs"
+    "timezone-convert": "dist/cli-entry.mjs"
   },
   "source": "./src/index.ts",
   "files": [
