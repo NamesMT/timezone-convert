@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.4.0
+
+[compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.7...v1.4.0)
+
+### 💅 Refactors
+
+- Use generic interface types for timezone maps ([83ac632](https://github.com/namesmt/timezone-convert/commit/83ac632))
+
+### 📦 Build
+
+- Migrate to tsdown with native import maps ([d355243](https://github.com/namesmt/timezone-convert/commit/d355243))
+
+### 🏡 Chore
+
+- Clean template leftovers from .gitignore ([1eff088](https://github.com/namesmt/timezone-convert/commit/1eff088))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.3.7
 
 [compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.6...v1.3.7)
