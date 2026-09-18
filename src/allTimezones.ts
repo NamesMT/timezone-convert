@@ -1,6 +1,6 @@
 import type { TimezonesElement } from '#src/types.js'
 
-export const allTimezones = [
+export const allTimezones: readonly TimezonesElement[] = [
   {
     iana: 'Africa/Abidjan',
     windowsDisplay: 'Monrovia, Reykjavik',
@@ -2776,4 +2776,4 @@ export const allTimezones = [
     windowsDisplay: 'Coordinated Universal Time',
     windowsId: 'UTC',
   },
-] as const satisfies TimezonesElement[]
+]
