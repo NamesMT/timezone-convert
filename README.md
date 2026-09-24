@@ -25,6 +25,7 @@
     * [Programatic](#programatic)
       * [Install package](#install-package)
       * [Import \& use:](#import--use)
+  * [Releasing](#releasing)
   * [License](#license)
 
 ## Overview
@@ -84,6 +85,36 @@ pnpm install timezone-convert
 import { parseTzAuto } from 'timezone-convert'
 
 const bucharestTz = parseTzAuto('Europe/Bucharest')
+```
+
+## Releasing
+
+Releases are **version-first and manual**: go to **Actions → Release → Run workflow**, enter the
+version to ship (e.g. `1.5.0`, without a leading `v`) and run it.
+
+The workflow validates that version against `package.json`, runs the full `check` gate
+(lint + types + tests with coverage), builds, then lets
+[changelogen](https://github.com/unjs/changelogen) derive the changelog from conventional commits,
+bump `package.json`, write `CHANGELOG.md`, commit and tag `v<version>`. It pushes that commit and
+tag, creates the GitHub release with the generated notes, and finally publishes to npm using
+[trusted publishing](https://docs.npmjs.com/trusted-publishers) (OIDC — no `NPM_TOKEN` secret).
+Enable the `dry-run` input to stop right before the push, release and publish.
+
+There is no tag-triggered publish: pushing a tag on its own publishes nothing, so a tag can never
+publish the same version twice.
+
+One-time setup before the first run:
+
+* publish the package once by hand — npm only lets you configure a trusted publisher for a package
+  that already exists
+* on npmjs.com → the package → **Settings → Trusted Publisher**, add this repository with the
+  workflow filename `release.yml`
+
+To preview a release locally:
+
+```sh
+pnpm run release:check 1.5.0 # validate a version against package.json
+pnpm run release:preview     # print the changelog the next release would get
 ```
 
 ## License
