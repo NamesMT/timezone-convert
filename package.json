@@ -7,12 +7,12 @@
   "author": "NamesMT <dangquoctrung123@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/namesmt",
-  "homepage": "https://github.com/namesmt/timezone-convert#readme",
+  "homepage": "https://github.com/NamesMT/timezone-convert#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/namesmt/timezone-convert.git"
+    "url": "git+https://github.com/NamesMT/timezone-convert.git"
   },
-  "bugs": "https://github.com/namesmt/timezone-convert/issues",
+  "bugs": "https://github.com/NamesMT/timezone-convert/issues",
   "keywords": [
     "cli",
     "convert",
@@ -20,7 +20,14 @@
     "timezone",
     "tzid",
     "windows-timezone",
-    "windows"
+    "windows",
+    "timezone-converter",
+    "timezone-parser",
+    "tzdata",
+    "date",
+    "utility",
+    "typescript",
+    "esm"
   ],
   "imports": {
     "#src/*": "./src/*"

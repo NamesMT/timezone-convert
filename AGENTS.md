@@ -51,6 +51,8 @@ tag still happen on the runner. Trusted-publisher setup is in the README.
 
 - Partial IANA support is deliberate: only the `Etc/*` ids Windows uses plus common `backward` ids
   (`WET`, `W-SU` absent); the test skips `Etc/` ids instead of matching `validIanaIds`.
+- `windowsIdMap`/`windowsDisplayMap` are last-write-wins over 554 rows: 138 Windows ids (and display names) cover many IANA ids, so a Windows lookup returns one representative (`Monrovia, Reykjavik` → `Iceland`, not `Africa/Abidjan`).
+- `parseTzFromWindowsDisplay` strips a leading `(UTC…)`/`(UTC±hh:mm)` prefix before lookup; `parseTzFromWindowsId` does no such stripping and misses that form.
 - `scripts/*.mjs` are copied verbatim from `starter-ts` and need no repo-specific edits.
 - The version needs a strict `\d+\.\d+\.\d+` (`v1.5.0`, `1.5` rejected) and must be strictly greater
   than the current one.
