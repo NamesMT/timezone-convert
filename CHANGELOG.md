@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v1.4.1
+
+[compare changes](https://github.com/NamesMT/timezone-convert/compare/v1.4.0...v1.4.1)
+
+### 📖 Documentation
+
+- Add npm metadata and correct repository URL casing ([646d41a](https://github.com/NamesMT/timezone-convert/commit/646d41a))
+
+### 🏡 Chore
+
+- Drop ./ prefix from bin to silence npm publish warning ([2d5fd5f](https://github.com/NamesMT/timezone-convert/commit/2d5fd5f))
+- **devcontainer:** Migrate from Alpine (musl) to Arch (glibc) image ([b667ff1](https://github.com/NamesMT/timezone-convert/commit/b667ff1))
+- **devcontainer:** Bootstrap pnpm via corepack when missing ([382f4a2](https://github.com/NamesMT/timezone-convert/commit/382f4a2))
+
+### 🤖 CI
+
+- **release:** Dispatch releases by hand and add an AGENTS.md ([f6aad22](https://github.com/NamesMT/timezone-convert/commit/f6aad22))
+
+### ❤️ Contributors
+
+- NamesMT ([@NamesMT](https://github.com/NamesMT))
+
 ## v1.4.0
 
 [compare changes](https://github.com/namesmt/timezone-convert/compare/v1.3.7...v1.4.0)
