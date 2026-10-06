@@ -53,6 +53,30 @@ pnpm exec tsx src/cli-entry.ts "Europe/Athens"  # CLI from source; `pnpm start` 
   `eslint --fix` on every commit, so run `pnpm run lint` before claiming clean.
 - ESM only (`"type": "module"`) and the public API changes through `src/index.ts`; no CJS build.
 
+## How to work here
+
+- Check who calls it before you change it; say when impact is unclear rather than guessing.
+- Never overwrite or delete a large section you have not understood.
+- Do not invent requirements; surface what looks needed.
+- Report the risk, not only the change — correctness, security, operational, integration.
+- **Fix the root cause, not the instance.** A bug reappearing under another name (a copied helper, a
+  rule stated twice, a guard bypassed by a second path) means fix the class: one implementation, one
+  formatter, one guard.
+- **Verify before claiming, and say what you checked.** A green test proves only what it asserts — **break the thing it guards and watch it fail.** If it still passes, either the test is decoration or a different guard is running; find out which. Where a stub cannot answer the question, drive the real thing. Mark anything unverified as unverified.
+- If recall of this project is missing, read this file and `git log` before acting.
+
+## Conciseness
+
+Prune verbose, keep correctness — code, comments, docs alike. Code: a comment only for non-obvious
+intent. Docs: one idea per sentence; cut what would not change what a reader does. Delete history
+`git log` already holds and keep the rule, not the story. Never drop a caveat to save a line.
+
+## User-facing docs
+
+`README.md` is the only hand-written user-facing doc. Keep it a **concise first read**; put depth
+in `<details>` spoilers and add visuals where they help. (The `docs/` that `typedoc.yml` generates is an API site, not prose.)
+Docs ship with the change, in the same commit.
+
 ## Releasing
 
 Version-first and manual: Actions → Release → Run workflow with the version (no `v`). The workflow
@@ -70,28 +94,3 @@ tag still happen on the runner. Trusted-publisher setup is in the README.
 - `scripts/*.mjs` are copied verbatim from `starter-ts` and need no repo-specific edits.
 - The version needs a strict `\d+\.\d+\.\d+` (`v1.5.0`, `1.5` rejected) and must be strictly greater
   than the current one.
-
-## How to work here
-
-- Check who calls it before you change it; say when impact is unclear rather than guessing.
-- Never overwrite or delete a large section you have not understood.
-- Do not invent requirements; surface what looks needed.
-- Report the risk, not only the change — correctness, security, operational, integration.
-- **Fix the root cause, not the instance.** A bug reappearing under another name (a copied helper, a
-  rule stated twice, a guard bypassed by a second path) means fix the class: one implementation, one
-  formatter, one guard.
-- Verify before claiming, and say which direction you checked; a passing test is not evidence it
-  pinned anything.
-- If recall of this project is missing, read this file and `git log` before acting.
-
-## Conciseness (applies everywhere)
-
-Prune verbose, keep correctness — code, comments, docs alike. Code: a comment only for non-obvious
-intent. Docs: one idea per sentence; cut what would not change what a reader does. Delete history
-`git log` already holds and keep the rule, not the story. Never drop a caveat to save a line.
-
-## User-facing docs
-
-`README.md` is the only hand-written user-facing doc. Keep it a **concise first read**; put depth
-in `<details>` spoilers and add visuals where they help. (The `docs/` that `typedoc.yml` generates is an API site, not prose.)
-Docs ship with the change, in the same commit.
