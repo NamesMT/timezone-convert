@@ -78,6 +78,6 @@ intent. Docs: one idea per sentence; cut what would not change what a reader doe
 
 ## User-facing docs
 
-`README.md` is the only hand-written user-facing doc: concise first read, depth behind `<details>`
-spoilers, visuals for skimmers. (The `docs/` that `typedoc.yml` generates is an API site, not prose.)
+`README.md` is the only hand-written user-facing doc. Keep it a **concise first read**; put depth
+in `<details>` spoilers and add visuals where they help. (The `docs/` that `typedoc.yml` generates is an API site, not prose.)
 Docs ship with the change, in the same commit.
